@@ -1,5 +1,5 @@
 <template>
-<div v-show="show" transition="fade" class="Alert Alert--{{ type }}">
+<div v-if="show" transition="fade" class="Alert Alert--{{ type }}">
 	<p>
 		<span class="Alert__type">{{ type | capitalize }}!</span>
 		<slot></slot>

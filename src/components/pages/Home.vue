@@ -2,8 +2,9 @@
 	<h1>Vue.js UI Framework</h1>
 	<h2>Todo</h2>
 	<ul class="todo-list">
-		<li>Update Vue.js and Webpack Template (vue-cli)</li>
+		<li class="done">Update Vue.js and Webpack Template (vue-cli)</li>
 		<li>Write unit tests for current components</li>
+		<li>Convert all tests to same style (if possible)</li>
 		<li>Pop-over component</li>
 		<li>Cleanup components and styles</li>
 	</ul>
@@ -30,6 +31,9 @@ export default {
 	padding-left: 35px;
 	li {
 		margin-bottom: 5px;
+		&.done {
+			text-decoration: line-through;
+		}
 	}
 }
 h2 {

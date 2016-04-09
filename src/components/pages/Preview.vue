@@ -1,5 +1,8 @@
 <template>
 <div class="test-container">
+	<alert type="success" :delay="1000">
+		This is an alert! It is important and does not fade based on timer.
+	</alert>
 	<headline sub="Icon component for displaying SVG's">
 		Icon
 	</headline>

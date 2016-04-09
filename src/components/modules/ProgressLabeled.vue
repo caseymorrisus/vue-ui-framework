@@ -24,6 +24,7 @@
 </template>
 
 <script>
+import Progress from './Progress'
 export default {
 	props: {
 		min: {
@@ -54,6 +55,9 @@ export default {
 		currentWidth () {
 			return (this.current / this.max) * 100
 		}
+	},
+	components: {
+		Progress
 	}
 }
 </script>
