@@ -102,9 +102,15 @@ $hoverColor: #222;
 	}
 }
 .Item--link {
+	position: relative;
 	color: #888;
 	text-decoration: none;
 	padding: 10px;
 	display: block;
+	padding-right: 20px;
+	.Badge {
+		position: absolute;
+		right: 15px;
+	}
 }
 </style>

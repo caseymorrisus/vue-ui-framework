@@ -1,5 +1,12 @@
 <template>
 <div class="test-container">
+	<headline sub="Badge component for displaying notification amounts">
+		Badge
+	</headline>
+	<badge :num="7"></badge>
+	<badge :num="34" bg="#673AB7"></badge>
+	<badge :num="125" bg="#E91E63"></badge>
+	<badge :num="314159"></badge>
 	<headline sub="Avatar component for displaying user images, icons, or gravatars">
 		Avatar
 	</headline>
@@ -20,7 +27,11 @@
 		<divider></divider>
 		<item href="#"><icon src="gear-a"></icon><span>Settings</span></item>
 		<divider></divider>
-		<item href="#"><icon src="users"></icon><span>Users</span></item>
+		<item href="#">
+			<icon src="users"></icon>
+			<span>Users</span>
+			<badge :num="3"></badge>
+		</item>
 	</dropdown>
 	<alert type="success" :delay="1000">
 		This is an alert! It is important and does not fade based on timer.

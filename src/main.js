@@ -35,21 +35,32 @@ router.map({
 // Define global components
 import Tab from './components/modules/Tab'
 Vue.component('tab', Tab)
+
 import Toggle from './components/modules/Toggle'
 Vue.component('toggle', Toggle)
+
 import Progress from './components/modules/Progress'
 Vue.component('progress', Progress)
+
 import ProgressLabeled from './components/modules/ProgressLabeled'
 Vue.component('progress-labeled', ProgressLabeled)
+
 import Icon from './components/modules/Icon'
 Vue.component('icon', Icon)
+
 import Item from './components/modules/Item'
 Vue.component('item', Item)
+
 import Dropdown from './components/modules/Dropdown'
 Vue.component('dropdown', Dropdown)
+
 import Divider from './components/modules/Divider'
 Vue.component('divider', Divider)
+
 import Avatar from './components/modules/Avatar'
 Vue.component('avatar', Avatar)
+
+import Badge from './components/modules/Badge'
+Vue.component('badge', Badge)
 
 router.start(App, 'body')
