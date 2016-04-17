@@ -49,5 +49,7 @@ import Dropdown from './components/modules/Dropdown'
 Vue.component('dropdown', Dropdown)
 import Divider from './components/modules/Divider'
 Vue.component('divider', Divider)
+import Avatar from './components/modules/Avatar'
+Vue.component('avatar', Avatar)
 
 router.start(App, 'body')

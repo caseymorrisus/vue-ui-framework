@@ -1,5 +1,17 @@
 <template>
 <div class="test-container">
+	<headline sub="Avatar component for displaying user images, icons, or gravatars">
+		Avatar
+	</headline>
+	<avatar bg="#673AB7">A</avatar>
+	<avatar bg="#E91E63">B</avatar>
+	<avatar disabled>C</avatar><br>
+	<avatar src="http://placeimg.com/50/50/1"></avatar>
+	<avatar src="http://placeimg.com/50/50/2"></avatar>
+	<avatar src="http://placeimg.com/50/50/3"></avatar><br>
+	<avatar bg="#26C6DA" icon="shuffle" icon-color="#7B1FA2"></avatar>
+	<avatar bg="#222" icon="users" icon-color="#E91E63"></avatar>
+	<avatar bg="#222" icon="locked" icon-color="#E91E63" disabled></avatar>
 	<headline sub="Dropdown component for displaying list of links that can be toggled">
 		Dropdown
 	</headline>
@@ -255,5 +267,17 @@ export default {
 }
 .Tabs li {
 	color: purple;
+}
+.Avatar {
+	.Icon {
+		svg {
+			transition: 300ms all ease-in-out;
+		}
+		&:hover {
+			svg {
+				fill: #fff;
+			}
+		}
+	}
 }
 </style>
