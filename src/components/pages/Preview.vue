@@ -1,5 +1,15 @@
 <template>
 <div class="test-container">
+	<headline sub="Dropdown component for displaying list of links that can be toggled">
+		Dropdown
+	</headline>
+	<dropdown title="Dropdown">
+		<item href="#" active><icon src="home"></icon><span>Home</span></item>
+		<divider></divider>
+		<item href="#"><icon src="gear-a"></icon><span>Settings</span></item>
+		<divider></divider>
+		<item href="#"><icon src="users"></icon><span>Users</span></item>
+	</dropdown>
 	<alert type="success" :delay="1000">
 		This is an alert! It is important and does not fade based on timer.
 	</alert>
@@ -59,7 +69,13 @@
 		{{ quotes[0].body }} 
 	</toggle>
 	<toggle title="So can this.">
-		{{ quotes[1].body }} 
+		{{ quotes[1].body }}
+		<toggle title="So can this.">
+			{{ quotes[1].body }}
+			<toggle title="So can this.">
+				{{ quotes[1].body }} 
+			</toggle>
+		</toggle>
 	</toggle>
 	<toggle title="You can have them open by default" important>
 		{{ quotes[2].body }} 
@@ -132,6 +148,7 @@ import Headline from '../modules/Headline'
 import Tip from '../modules/Tip'
 import Alert from '../modules/Alert'
 import Tabs from '../modules/Tabs'
+import WinsGraph from '../modules/WinsGraph'
 export default {
 	name: 'TestPage',
 	data () {
@@ -224,7 +241,7 @@ export default {
 		}
 	},
 	components: {
-		Headline, Tip, Alert, Tabs
+		Headline, Tip, Alert, Tabs, WinsGraph
 	},
 	created () {
 		document.title = 'UI Framework - Preview'

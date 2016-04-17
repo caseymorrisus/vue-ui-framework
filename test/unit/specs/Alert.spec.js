@@ -16,10 +16,10 @@ describe('Alert [Component]', function (done) {
 		expect(vm.$el.querySelector('.Alert')).to.exist
 	})
 	it('should render slot content correctly', () => {
-		vm.$el.querySelector('.Alert').textContent.should.contain('Test')
+		expect(vm.$el.querySelector('.Alert').textContent).to.contain('Test')
 	})
 	it('should give the correct class based on type', () => {
-		vm.$el.querySelector('.Alert.Alert--success').textContent.should.contain('Test')
+		expect(vm.$el.querySelector('.Alert.Alert--success').textContent).to.contain('Test')
 	})
 	it('should have a close button if alert is important', () => {
 		expect(vm.$el.querySelector('.Alert__close')).to.exist

@@ -51,6 +51,10 @@ export default {
 <style lang="scss" scope>
 .Toggle {
 	margin-bottom: 15px;
+	.Toggle {
+		padding-left: 25px;
+		margin-top: 15px;
+	}
 }
 .Toggle__title {
 	cursor: pointer;

@@ -43,5 +43,11 @@ import ProgressLabeled from './components/modules/ProgressLabeled'
 Vue.component('progress-labeled', ProgressLabeled)
 import Icon from './components/modules/Icon'
 Vue.component('icon', Icon)
+import Item from './components/modules/Item'
+Vue.component('item', Item)
+import Dropdown from './components/modules/Dropdown'
+Vue.component('dropdown', Dropdown)
+import Divider from './components/modules/Divider'
+Vue.component('divider', Divider)
 
 router.start(App, 'body')

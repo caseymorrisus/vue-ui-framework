@@ -1,5 +1,5 @@
 <template>
-	<div class="stitched stitched--{{ type }}">
+	<div class="Tip Tip--{{ type }}">
 		<img :src="'../../../static/img/tip-' + type + '.svg'">
 		<p>
 			<slot></slot>
@@ -9,7 +9,12 @@
 
 <script>
 export default {
-	props: ['type']
+	props: {
+		type: {
+			type: String,
+			default: 'info'
+		}
+	}
 }
 </script>
 
@@ -21,7 +26,7 @@ p {
 	border-left: 1px solid rgba(255,255,255,0.3);
 	padding-left: 15px;
 }
-.stitched {
+.Tip {
 	$color: #95a5a6;
 	padding: 17px 20px 20px 20px;
 	margin: 20px 0px;
@@ -41,25 +46,25 @@ p {
 		margin-right: 15px;
 	}
 }
-.stitched--info {
+.Tip--info {
 	$color: #3498db;
 	border: $borderWidth solid darken($color, 5%);
 	background: #3498db;
 }
 
-.stitched--success {
+.Tip--success {
 	$color: #2ecc71;
 	border: $borderWidth solid darken($color, 5%);
 	background: #2ecc71;
 }
 
-.stitched--warning {
+.Tip--warning {
 	$color: #f1c40f;
 	border: $borderWidth solid darken($color, 5%);
 	background: #f1c40f;
 }
 
-.stitched--danger {
+.Tip--danger {
 	$color: #e74c3c;
 	border: $borderWidth solid darken($color, 5%);
 	background: #e74c3c;
