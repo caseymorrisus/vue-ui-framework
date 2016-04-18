@@ -63,4 +63,16 @@ Vue.component('avatar', Avatar)
 import Badge from './components/modules/Badge'
 Vue.component('badge', Badge)
 
+import Modal from './components/modules/Modal'
+Vue.component('modal', Modal)
+
+import Button from './components/modules/Button'
+Vue.component('v-button', Button)
+
+import Loader from './components/modules/Loader'
+Vue.component('loader', Loader)
+
+import Card from './components/modules/Card'
+Vue.component('card', Card)
+
 router.start(App, 'body')

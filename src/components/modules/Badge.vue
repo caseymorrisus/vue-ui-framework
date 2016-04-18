@@ -16,7 +16,7 @@ export default {
 			default: '#fff'
 		},
 		num: {
-			type: Number,
+			type: [String, Number],
 			default: 0
 		}
 	}
@@ -27,7 +27,7 @@ export default {
 $size: 20px;
 .Badge {
 	display: inline-block;
-	padding: 0px 5px;
+	padding: 0px 7px;
 	border-radius: ($size / 2);
 	// width: $size;
 	height: $size;
@@ -36,5 +36,6 @@ $size: 20px;
 	font-size: 12px;
 	font-weight: 500;
 	user-select: none;
+	cursor: default;
 }
 </style>

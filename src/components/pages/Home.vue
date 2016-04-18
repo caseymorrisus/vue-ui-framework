@@ -24,7 +24,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .todo-list {
 	max-width: 700px;
 	list-style-type: decimal;

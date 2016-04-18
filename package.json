@@ -15,7 +15,7 @@
     "chart.js": "^2.0.0",
     "node-sass": "^3.4.2",
     "sass-loader": "^3.2.0",
-    "vue": "^1.0.18",
+    "vue": "^1.0.21",
     "vue-resource": "^0.7.0",
     "vue-router": "^0.7.12"
   },

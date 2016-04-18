@@ -1,12 +1,59 @@
 <template>
 <div class="test-container">
-	<headline sub="Badge component for displaying notification amounts">
+	<div class="flex-container">
+		<card></card>
+		<card></card>
+		<card></card>
+	</div>
+	<headline sub="Loader component for alerting a user to wait">
+		Loader
+	</headline>
+	<loader 
+		color="#222"
+		size=60
+		repeat-count='indefinite'
+		duration='700ms'
+	></loader>
+	<loader 
+		color="#222"
+		size=60
+		repeat-count='indefinite'
+		duration='1.5s'
+		reverse
+		text="Preparing"
+	></loader>
+	<loader 
+		color="#222"
+		size=36
+		repeat-count='indefinite'
+		duration='700ms'
+		text-size="0.75em"
+	></loader>
+	<loader 
+		color="#222"
+		size=36
+		repeat-count='indefinite'
+		duration='1.5s'
+		reverse
+		text="Preparing"
+		text-size="0.75em"
+	></loader>
+	<headline sub="Modal component for displaying pop-up window">
+		Modal
+	</headline>
+	<v-button @click="openModal">Open Modal</v-button>
+	<modal title="Modal Title" v-ref:modal>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga laborum quos fugiat aliquid ratione dolorem dicta, voluptatum saepe, autem eum. Expedita alias ipsum voluptas amet in ea provident voluptatibus odit!
+	</modal>
+	<br><br>
+	<headline sub="Badge component for displaying notifications">
 		Badge
 	</headline>
 	<badge :num="7"></badge>
 	<badge :num="34" bg="#673AB7"></badge>
 	<badge :num="125" bg="#E91E63"></badge>
-	<badge :num="314159"></badge>
+	<badge :num="314159" bg="#f39c12"></badge>
+	<badge num="NEW" bg="#27ae60"></badge><br><br>
 	<headline sub="Avatar component for displaying user images, icons, or gravatars">
 		Avatar
 	</headline>
@@ -266,13 +313,33 @@ export default {
 	components: {
 		Headline, Tip, Alert, Tabs, WinsGraph
 	},
+	methods: {
+		openModal () {
+			this.$refs.modal.openModal()
+		}
+	},
 	created () {
 		document.title = 'UI Framework - Preview'
+	},
+	ready () {
+		// this.$refs.modal.open = false
 	}
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+.Icon {
+	cursor: pointer;
+	svg {
+		width: 48px;
+		transition: all 200ms ease-out;
+	}
+	&:hover {
+		svg {
+			fill: #1abc9c;
+		}
+	}
+}
 .test-container {
 	max-width: 700px;
 }
@@ -290,5 +357,13 @@ export default {
 			}
 		}
 	}
+}
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: stretch;
+	margin:0 -5px 15px -5px;
 }
 </style>

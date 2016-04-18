@@ -49,6 +49,51 @@ body {
 	font-family: 'Roboto', sans-serif;
 	
 }
+h2 {
+	font-size: 1.7em;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.icons--large {
+	.Icon {
+		svg {
+			width: 48px;
+		}
+	}
+}
+.icons--medium {
+	.Icon {
+		svg {
+			width: 32px;
+		}
+	}
+}
+.icons--small {
+	.Icon {
+		svg {
+			width: 24px;
+		}
+	}
+}
+nav {
+	.Icon {
+		margin-right: 10px;
+		svg {
+			padding-top: 3px;
+			fill: #888;
+			width: 22px;
+		}
+	}
+	a:hover,
+	.v-link-active {
+		color: #fff;
+		.Icon {
+			svg {
+				fill: #fff;
+			}
+		}
+	}
+}
 .wrapper {
 	background: #333;
 }
