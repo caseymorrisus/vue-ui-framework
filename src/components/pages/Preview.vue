@@ -1,5 +1,8 @@
 <template>
 <div class="test-container">
+	<headline sub="Card component for displaying group of user information">
+		Card
+	</headline>
 	<div class="flex-container">
 		<card></card>
 		<card></card>

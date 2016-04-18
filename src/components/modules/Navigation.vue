@@ -2,6 +2,7 @@
 	<nav>
 		<a v-link="{ path: '/', exact: true }"><icon src="home"></icon><span>Home</span></a>
 		<a v-link="{ path: '/preview'}"><icon src="heart"></icon><span>Preview</span></a>
+		<a v-link="{ path: '/preview2'}"><icon src="heart"></icon><span>Preview 2</span></a>
 	</nav>
 </template>
 

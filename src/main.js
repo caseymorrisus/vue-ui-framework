@@ -6,6 +6,7 @@ import VueResource from 'vue-resource'
 // Page Components
 import Home from './components/pages/Home'
 import Preview from './components/pages/Preview'
+import Preview2 from './components/pages/Preview2'
 
 Vue.use(VueRouter)
 Vue.use(VueResource)
@@ -24,6 +25,9 @@ router.map({
 	},
 	'/preview': {
 		component: Preview
+	},
+	'/preview2': {
+		component: Preview2
 	},
 	'*': {
 		component: {
@@ -74,5 +78,14 @@ Vue.component('loader', Loader)
 
 import Card from './components/modules/Card'
 Vue.component('card', Card)
+
+import Headline from './components/modules/Headline'
+Vue.component('headline', Headline)
+
+import Slide from './components/modules/Slide'
+Vue.component('slide', Slide)
+
+import Slider from './components/modules/Slider'
+Vue.component('slider', Slider)
 
 router.start(App, 'body')
