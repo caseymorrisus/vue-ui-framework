@@ -4,7 +4,8 @@
 	<ul class="todo-list">
 		<li class="done">Update Vue.js and Webpack Template (vue-cli)</li>
 		<li class="done">Write unit tests for current components</li>
-		<li>Convert all tests to same style (if possible)</li>
+		<li class="done">Convert all tests to same style (if possible)</li>
+		<li>Convert use of $el to $refs in tests (deprecated in 2.0)</li>
 		<li>Pop-over component</li>
 		<li>Cleanup components and styles</li>
 	</ul>
